@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "PersonalSite"
+  "defaultProject": "PersonalSite",
+  "cli": {
+    "analytics": false
+  }
 }
