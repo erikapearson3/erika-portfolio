@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<svg [attr.width]="svgWidth" [attr.height]="getSvgHeight()">
+  @for (skill of skills; track skill.name; let i = $index) {
+    <g>
+      <!-- Label for the skill -->
+      <text [attr.x]="5"
+            [attr.y]="i * (barHeight + padding) + (barHeight / 2) + 5"
+            font-size="12"
+            fill="#333">
+        {{ skill.name }}
+      </text>
+
+      <!-- Bar representing the skill proficiency -->
+      <rect [attr.x]="100"
+            [attr.y]="i * (barHeight + padding)"
+            [attr.width]="getBarWidth(skill.proficiency)"
+            [attr.height]="barHeight"
+            fill="#4299E1" />
+    </g>
+  }
+</svg>
+</html>
