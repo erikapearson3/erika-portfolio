@@ -24,16 +24,8 @@
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
-
+	
   <ItemGroup>
-<<<<<<< HEAD
-    <Folder Include="ClientApp\src\app\nav-menu\NewFolder\" />
-=======
-    <None Remove="ClientApp\src\app\skill-graphic.component\skill-graphic.component.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
->>>>>>> 2bb6f01d2f637946fec2fcfa8270c47307455c28
     <Folder Include="Controllers\" />
   </ItemGroup>
 
