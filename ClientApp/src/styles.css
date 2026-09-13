@@ -22,3 +22,19 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+app-header {
+  display: block !important;
+  width: 100% !important;
+  position: relative !important; /* Establishes a boundary for absolute layout */
+  clear: both !important;
+}
+
+app-menu-dropdown {
+  display: block !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important; /* Perfectly aligns it vertically with the title */
+  z-index: 1050 !important; /* Keeps it above the striped background */
+}

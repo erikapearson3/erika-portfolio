@@ -1,4 +1,5 @@
-.header{
-    display:flex;
-    padding-bottom:20px;
+.header h1 {
+  float: left !important;
+  text-align: left !important;
 }
+
