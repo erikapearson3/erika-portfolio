@@ -24,6 +24,10 @@
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="ClientApp\src\app\app.routes.ts" />
+  </ItemGroup>
 	
   <ItemGroup>
     <Folder Include="Controllers\" />
