@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { provideRouter } from '@angular/router';
 import { MenuDropdownComponent } from './menu-dropdown.component';
 
 describe('MenuDropdownComponent', () => {
@@ -8,7 +8,8 @@ describe('MenuDropdownComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MenuDropdownComponent]
+      imports: [MenuDropdownComponent],
+      providers: [provideRouter([])]
     })
     .compileComponents();
 
