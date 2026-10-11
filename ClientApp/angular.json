@@ -134,10 +134,6 @@
       }
     }
   },
-  "defaultProject": "PersonalSite",
-  "cli": {
-    "analytics": false
-=======
   "cli": {
     "analytics": false
   },
