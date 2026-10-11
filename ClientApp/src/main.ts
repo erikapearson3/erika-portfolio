@@ -5,8 +5,8 @@ import { AppComponent } from './app/app.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { importProvidersFrom } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 import { routes } from './app/app.routes';
+import { provideRouter } from '@angular/router';
 export function getBaseUrl() {
   return document.getElementsByTagName('base')[0].href;
 }
@@ -24,6 +24,7 @@ if (environment.production) {
 bootstrapApplication(AppComponent, {
   providers: [
     provideHttpClient(withInterceptorsFromDi()),
-    importProvidersFrom(FormsModule, RouterModule.forRoot([]))
+    importProvidersFrom(FormsModule),
+    provideRouter(routes)
   ]
 }).catch(err => console.error(err));

@@ -28,13 +28,13 @@
   <ItemGroup>
     <TypeScriptCompile Remove="ClientApp\src\app\app.routes.ts" />
   </ItemGroup>
-	
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\skill-graphic.component\skill-graphic.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
