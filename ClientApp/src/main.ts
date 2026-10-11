@@ -6,6 +6,7 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
 import { importProvidersFrom } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { routes } from './app/app.routes';
 export function getBaseUrl() {
   return document.getElementsByTagName('base')[0].href;
 }
