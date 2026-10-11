@@ -1,20 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Provide sufficient contrast against white background */
-.h-100 {
-  height: 100% !important;
-  background-color: rgb(0,29,61); 
+html,
+body {
+  min-height: 100%;
 }
+
+body {
+  margin: 0;
+  background-color: rgb(0, 29, 61);
+  color: whitesmoke;
+  font-family: Arial, sans-serif;
+}
+
+app-root {
+  display: block;
+  min-height: 100vh;
+}
+
 a {
-  color: #0366d6;
+  color: #6ea8fe;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  a:hover {
+    color: #9ec5fe;
+  }
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 code {
-  color: #e01a76;
+  color: #f18bbf;
 }
 
 .btn-primary {
@@ -26,7 +44,7 @@ code {
 app-header {
   display: block !important;
   width: 100% !important;
-  position: relative !important; /* Establishes a boundary for absolute layout */
+  position: relative !important;
   clear: both !important;
 }
 
@@ -35,6 +53,6 @@ app-menu-dropdown {
   position: absolute !important;
   right: 0 !important;
   top: 50% !important;
-  transform: translateY(-50%) !important; /* Perfectly aligns it vertically with the title */
-  z-index: 1050 !important; /* Keeps it above the striped background */
+  transform: translateY(-50%) !important;
+  z-index: 1050 !important;
 }
