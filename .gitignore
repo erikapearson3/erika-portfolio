@@ -229,3 +229,10 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/ClientApp/.angular
+/ClientApp/src/main.js
+/ClientApp/src/main.js.map
+/ClientApp/src/app/**/*.component.js
+/ClientApp/src/app/**/*.component.js.map
+/ClientApp/src/app/**/*.component.spec.js
+/ClientApp/src/app/**/*.component.spec.js.map

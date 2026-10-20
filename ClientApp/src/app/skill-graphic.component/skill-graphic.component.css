@@ -1,0 +1,28 @@
+/* Custom grid container animation effects */
+.skill-card {
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #111a24 !important; /* Contrasting background container layer */
+}
+
+  /* Smoothly elevate the card block and apply glow highlights */
+  .skill-card:hover {
+    transform: translateY(-6px);
+    border-color: #0dcaf0 !important;
+    box-shadow: 0 12px 24px rgba(13, 202, 240, 0.12) !important;
+  }
+
+/* Layout padding and color physics for individual tool badges */
+.skill-badge {
+  background-color: rgba(255, 255, 255, 0.03);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+  .skill-badge:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    cursor: pointer;
+  }

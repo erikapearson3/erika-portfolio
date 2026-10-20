@@ -1,0 +1,21 @@
+<div class="dropdown">
+  <button class="btn btn-outline-light dropdown-toggle"
+          type="button"
+          id="portfolioMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false">
+    Menu
+  </button>
+  <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end shadow" aria-labelledby="portfolioMenuButton">
+    <li>
+      <a class="dropdown-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+    </li>
+    <li>
+      <a class="dropdown-item" routerLink="/projects" routerLinkActive="active">Projects</a>
+    </li>
+    <li>
+      <a class="dropdown-item" routerLink="/contact" routerLinkActive="active">Contact</a>
+    </li>
+  </ul>
+</div>
+
